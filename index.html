@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      h1 {
+        text-align: center;
+        color: cyan;
+      }
+
+      #image {
+        margin-top: 50px;
+      }
+
+      body {
+        background-color: #ededed;
+      }
+
+      img {
+        width: 350px;
+        height: 350px;
+        border-radius: 20px;
+      }
+
+      .button {
+        text-align: center;
+      }
+
+      button {
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>What Can JavaScript Do?</h1>
+      </section>
+
+      <section id="image">
+        <div class="button">
+          <button id="on">Turn On</button>
+          <img id="my-image" src="img/off.png" alt="off" />
+          <button id="off">Turn off</button>
+        </div>
+      </section>
+    </main>
+    <script>
+      const onButton = document
+        .getElementById("on")
+        .addEventListener("click", function () {
+          document.getElementById("my-image").src = "img/on.jpg";
+        });
+      const offButton = document
+        .getElementById("off")
+        .addEventListener("click", function () {
+          document.getElementById("my-image").src = "img/off.png";
+        });
+    </script>
+  </body>
+</html>
