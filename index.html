@@ -5,49 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript</title>
-
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-
-      h1 {
-        text-align: center;
-        color: cyan;
-      }
-
-      #image {
-        margin-top: 50px;
-        margin-bottom: 170px;
-      }
-
-      img {
-        width: 350px;
-        height: 350px;
-        border-radius: 20px;
-      }
-
-      .button {
-        text-align: center;
-      }
-
-      button {
-        padding: 10px;
-        border-radius: 10px;
-        border: none;
-      }
-
-      footer {
-        text-align: center;
-        background-color: aliceblue;
-        padding: 2px;
-      }
-
-      p {
-        margin-bottom: 0;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main>
@@ -63,20 +21,9 @@
         </div>
       </section>
     </main>
-    <footer>
-      <p>2021-2022 &copy; by Fahan Ahmed Nahid. All Rights Reserved.</p>
-    </footer>
-    <script>
-      const onButton = document
-        .getElementById("on")
-        .addEventListener("click", function () {
-          document.getElementById("my-image").src = "img/on.jpg";
-        });
-      const offButton = document
-        .getElementById("off")
-        .addEventListener("click", function () {
-          document.getElementById("my-image").src = "img/off.png";
-        });
-    </script>
+    <script src="app.js"></script>
   </body>
+  <footer>
+    <p>2021-2022 &copy; by Fahan Ahmed Nahid. All Rights Reserved.</p>
+  </footer>
 </html>
